@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TOKEN_POST, USER_GET } from '../../api';
-import Input from '../../Components/Form/Input'
+import Input from '../Forms/Input'
 import useForm from '../../Hooks/useForm';
-import Button from '../Form/Button';
+import Button from '../Forms/Button';
 import { UserContext} from '../../UserContext';
 import Error from '../Helper/Error';
 import styles from './LoginForm.module.css'
-import stylesBtn from '../Form/Button.module.css'
+import stylesBtn from '../Forms/Button.module.css'
 
 const LoginForm = () => {
     const username = useForm();
